@@ -1,0 +1,1 @@
+declare var showConfirm: (x: string, y: () => void, z?: () => void) => void;

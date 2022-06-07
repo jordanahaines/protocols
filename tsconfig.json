@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"allowJs": true,
+		"lib": ["es6", "dom", "es2017"],
+		"target": "ES6",
+		"noEmit": true
+	}
+}
