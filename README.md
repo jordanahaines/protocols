@@ -38,6 +38,8 @@ You can read more about named AWS profiles here: https://docs.aws.amazon.com/cli
 
 4. The protocol is added to your profile. Click its name to open it.
 
+5. If you would like to test the **providers** widget (showing the list of providers associated with this protocol), create one or several accounts in the staging environment for providers (e.g. Healee MD) and ask the Healee team to link these providers with the protocol you are working on.
+
 ## Testing reminders
 
 When you want to test reminders for notifications which you've added to the protocol, you can use the _protocol.sh_ tool to speed up the process because sometimes even if you've put "Minutes" for the period attribute, you may need to wait some extra minutes for the scheduler job to run.
