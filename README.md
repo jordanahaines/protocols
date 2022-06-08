@@ -6,7 +6,7 @@ Install AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-starte
 
 ## Authentication
 
-1. Add **HEALEE_STAGE_URL** and **HEALEE_STAGE_AUTH** to the end of your _~/.bashrc_ / _~/.zshrc_ / etc. file.
+1. Add **HEALEE_STAGE_URL** and **HEALEE_STAGE_AUTH** (provided by the Healee team) to the end of your _~/.bashrc_ / _~/.zshrc_ / etc. file.
 
 E.g.
 ```
