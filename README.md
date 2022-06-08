@@ -37,3 +37,17 @@ You can read more about named AWS profiles here: https://docs.aws.amazon.com/cli
 3. Select your protocol and install it.
 
 4. The protocol is added to your profile. Click its name to open it.
+
+## Versioning
+
+The storage for the protocol files does not support versioning and that's why we recommend adding the protocol files to your own private / public repository right after the initial fetch of the protocol files.
+
+e.g.
+
+```
+./protocol.sh fetch <protocol name>
+cd development/<protocol name>
+git init
+git remote add origin <your git repo url>
+...
+```
