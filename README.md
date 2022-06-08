@@ -38,6 +38,14 @@ You can read more about named AWS profiles here: https://docs.aws.amazon.com/cli
 
 4. The protocol is added to your profile. Click its name to open it.
 
+## Testing reminders
+
+When you want to test reminders for notifications which you've added to the protocol, you can use the _protocol.sh_ tool to speed up the process because sometimes even if you've put "Minutes" for the period attribute, you may need to wait some extra minutes for the scheduler job to run.
+
+e.g.
+
+```./protocol.sh notify <protocol name>```
+
 ## Versioning
 
 The storage for the protocol files does not support versioning and that's why we recommend adding the protocol files to your own private / public repository right after the initial fetch of the protocol files.
