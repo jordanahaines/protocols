@@ -8,6 +8,7 @@ declare const heal: {
 			getNotification(protocol: any, findLast?: boolean): any,
 			createNotification(group: string, componentId: string, text: string, data?: any): any,
 			setRecurrence(notification: any, startDate: Date, period: string, value: number, skipEvery?: number): void,
+			componentReady(props: any),
 			consts: {
 				MONTH_PERIOD: string,
 				DAY_PERIOD: string,
@@ -19,4 +20,5 @@ declare const heal: {
 	}
 };
 
+declare const showMessage: (message: string, callback?: () => void) => void;
 declare const showConfirm: (message: string, confirmCallback: () => void, cancelCallback?: () => void) => void;

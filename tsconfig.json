@@ -1,9 +1,12 @@
 {
 	"compilerOptions": {
+		"jsx": "react-jsx",
 		"checkJs": true,
 		"allowJs": true,
 		"lib": ["es6", "dom", "es2017"],
+		"allowUmdGlobalAccess": true,
 		"target": "ES6",
-		"noEmit": true
+		"noEmit": true,
+		"skipLibCheck": true
 	}
 }
