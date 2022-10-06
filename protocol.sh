@@ -9,7 +9,7 @@ elif [ "$mode" = "notify" ]; then
 	curl -w "\n" -H "Authorization: Basic $HEALEE_STAGE_AUTH" -X POST $HEALEE_STAGE_URL/api/v1/notifyProtocol/$protocol
 elif [ "$mode" = "build" ]; then
 	if [ -f "./development/$protocol/info.json" ]; then
-		aws s3 sync --profile $protocol --delete --exclude ".git/*" ./development/$protocol s3://protocol-$protocol
+		aws s3 sync --profile $protocol --delete --exclude ".git/*" --exclude "node_modules/*" --exclude "gallery-widget/*" --exclude "runner/*" --exclude ".idea/*"  --exclude ".DS_Store" ./development/$protocol s3://protocol-$protocol
 		curl -w "\n" -H "Authorization: Basic $HEALEE_STAGE_AUTH" -X POST $HEALEE_STAGE_URL/api/v1/buildProtocol/$protocol
 	else
 		echo "Protocol doesn't exist. Please, call fetch to retrieve the initial version of the protocol."
