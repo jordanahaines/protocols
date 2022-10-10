@@ -8,6 +8,7 @@ declare const heal: {
 			getNotification(protocol: any, findLast?: boolean): any,
 			createNotification(group: string, componentId: string, text: string, data?: any): any,
 			setRecurrence(notification: any, startDate: Date, period: string, value: number, skipEvery?: number): void,
+			showPage(offset: number): void,
 			componentReady(props: any),
 			consts: {
 				MONTH_PERIOD: string,
