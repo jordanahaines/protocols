@@ -1,0 +1,6 @@
+.git/*
+node_modules/*
+gallery-widget/*
+runner/*
+.idea/*
+.DS_Store
