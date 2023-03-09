@@ -1,0 +1,12 @@
+br
+| Hello&nbsp;
+span.clientColor(data-bind="text: getText('welcome.getWelcomeName')")
+br
+a(data-component-id="welcome" data-role="button" data-bind="visible: getBoolean('welcome.shouldShowButton'), click: performCustomActions") Click here
+br
+div(data-bind="invisible: getBoolean('welcome.shouldShowButton')")
+	div(data-role="protocolform" data-component-id="fillForm" data-start-button="true" data-bind="invisible: getBoolean('fillForm.isFormCompleted')")
+		div Fill the form:
+		a(data-role="button" data-action="start") Start
+	div(data-bind="visible: getBoolean('fillForm.isFormCompleted')") Thank you completing the form!
+br
