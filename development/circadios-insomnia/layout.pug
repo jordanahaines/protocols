@@ -9,4 +9,9 @@ div(data-bind="invisible: getBoolean('welcome.shouldShowButton')")
 		div Fill the form:
 		a(data-role="button" data-action="start") Start
 	div(data-bind="visible: getBoolean('fillForm.isFormCompleted')") Thank you completing the form!
+div(data-bind="invisible: getBoolean('welcome.shouldShowButton')")
+	div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true" data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+		div Sleep Journal One
+		a(data-role="button" data-action="start") Start
+	div(data-bind="visible: getBoolean('fillForm.isFormCompleted')") Sleep Journal One Complete!
 br
