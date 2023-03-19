@@ -1,17 +1,36 @@
 br
-| Hello&nbsp;
-span.clientColor(data-bind="text: getText('welcome.getWelcomeName')")
+hr
+h1 Sleep Journal
+p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+	div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+		| Please complete today's sleep journal:
+		a(data-role="button" data-action="start") Complete Sleep Journal
+	div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
 br
-a(data-component-id="welcome" data-role="button" data-bind="visible: getBoolean('welcome.shouldShowButton'), click: performCustomActions") Click here
+hr
 br
-div(data-bind="invisible: getBoolean('welcome.shouldShowButton')")
-	div(data-role="protocolform" data-component-id="fillForm" data-start-button="true" data-bind="invisible: getBoolean('fillForm.isFormCompleted')")
-		div Fill the form:
-		a(data-role="button" data-action="start") Start
-	div(data-bind="visible: getBoolean('fillForm.isFormCompleted')") Thank you completing the form!
-div(data-bind="invisible: getBoolean('welcome.shouldShowButton')")
-	div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true" data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
-		div Sleep Journal One
-		a(data-role="button" data-action="start") Start
-	div(data-bind="visible: getBoolean('fillForm.isFormCompleted')") Sleep Journal One Complete!
-br
+h1 This Week's Content
+div.circadios-content-container.week-one
+	h2 What is insomnia?
+	p Insomnia is the inability to obtain adequate sleep and/or poor sleep quality which results in some form of daytime impairment. Adequate sleep for most adults is defined as 7-9 hours. If the insomnia has been present for less than 3 months it may be labeled short term insomnia.
+	p
+		span Insomnia is characterized by at least one of the three following issues:
+		ol 
+			li Sleep Latency - the inability to efficiently initiate sleep
+			li The inability to maintain sleep through the night
+			li Waking up earlier than desired
+	p The National Institute of Health (NIH) estimates that ~ 30% of the general population complains of sleep disruption and another ~ 10% have associated symptoms of daytime functional impairment consistent with a diagnosis of insomnia.
+	p In order to better understand the strengths and weaknesses of your sleep, the first step is collecting data to see patterns about your sleep. Based on this information, we can work with you to develop an individualized care plan on how to improve your sleep.
+	p We’ll be sending a text reminder each morning for you to complete your sleep journal.  In two weeks we will review the results and understand the best way we can improve your sleep.
+	p
+		span In the sleep diary we will be tracking the following: 
+		ul
+			li Bedtime
+			li Risetime
+			li Naps
+	p
+		| As you are collecting this data, a
+		strong  first goal is to try to keep the same sleep schedule. Doesn’t matter if it’s a week days, weekends, work days and non work days. Consistence is key.
+		|  Additionally, we are human with much variation in our days, so of course there are days where you will feel more or sleep sleepy at bed time. Although it is most be beneficial to keep the same bed time and rise time every day, it is also important that we do not force ourselves to go to bed when we do not feel drowsy. So, between the rise time and bed time, a consistent rise time is the most important, and over time a consistent bed time will then fall into place easier. 
+	p Don’t let the data collection for the sleep diary heighten or intensify your insomnia. Again, our biggest goal of the sleep diary is to start  seeing patterns about your sleep emerge. 
