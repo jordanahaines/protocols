@@ -8,31 +8,65 @@
       },
       "questions": [
         {
-          "q": "When did you wake up?",
+          "q": "What time did you get into bed? (NOT FELL ASLEEP)",
           "type": "singlechoice",
           "choices": [
-            { "text": "5am", "id": "5" },
-            { "text": "6am", "id": "6" },
-            { "text": "7am", "id": "7" },
-            { "text": "8am", "id": "8" },
-            { "text": "9am", "id": "9" },
-            { "text": "10am", "id": "10" },
-            { "text": "11am", "id": "11" },
-            { "text": "12pm", "id": "12" }
+            "8 PM or earlier",
+            "9 PM",
+            "10 PM",
+            "11 PM",
+            "12 AM or later"
           ]
         },
         {
-          "q": "When did you go to bed?",
+          "q": "What time did you fall asleep?",
           "type": "singlechoice",
           "choices": [
-            { "text": "5pm", "id": "5" },
-            { "text": "6pm", "id": "6" },
-            { "text": "7pm", "id": "7" },
-            { "text": "8pm", "id": "8" },
-            { "text": "9pm", "id": "9" },
-            { "text": "10pm", "id": "10" },
-            { "text": "11pm", "id": "11" },
-            { "text": "12am", "id": "12" }
+            "8 PM or earlier",
+            "9 PM",
+            "10 PM",
+            "11 PM",
+            "12 AM",
+            "1 AM",
+            "2 AM",
+            "3 AM or later"
+          ]
+        },
+        {
+          "q": "I slept __ hours last night (ex. 8.5 )",
+          "type": "freetext"
+        },
+        {
+          "q": "Total perceived awakenings",
+          "type": "singlechoice",
+          "choices": ["6-7 times", "4-5 times", "2-3 times", "0-1 times"]
+        },
+        {
+          "q": "What time did you wake up?",
+          "type": "singlechoice",
+          "choices": [
+            "5 AM or earlier",
+            "6 AM",
+            "7 AM",
+            "8 AM",
+            "9 AM",
+            "10 AM",
+            "11 AM",
+            "12 PM or later"
+          ]
+        },
+        {
+          "q": "What time did you get out of bed?",
+          "type": "singlechoice",
+          "choices": [
+            "5 AM or earlier",
+            "6 AM",
+            "7 AM",
+            "8 AM",
+            "9 AM",
+            "10 AM",
+            "11 AM",
+            "12 PM or later"
           ]
         }
       ]
