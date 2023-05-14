@@ -1,0 +1,192 @@
+div.top-container
+	div(data-bind="visible: getBoolean('insomnia.isFormCompleted')")
+		div(data-bind="visible: getBoolean('insomnia.showScheduleLink')")
+			h3 Schedule Next Appointment
+			p Don't forget to schedule your next appointment!
+			div(data-role="protocolform" data-component-id="scheduleForm" data-start-button="true")
+				div
+					a(data-role="button" href="https://app.circadios.com/superdoc-redirect?param=cHJpdmF0ZUtleT0zMTI5NGRhNGYxZDY0ZWY3YmU4NGNmMDQ5YjZkYTRhZjAyZGRiZGYyMzU4ODNhNmQ4MTdlYzBmNzFkNzdmZWQ2Jm1haWw9cGhpbGlwcGErMzIxQGhlYWxlZS5jb20mcGFnZT1zZWFyY2glMkZkb2N0b3JzJmNvdW50cnk9dXM=") Schedule
+			br
+			hr
+			br
+		h1.circadiosHeader Sleep Journal
+		p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+		div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+			div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+				| Please complete today's sleep journal:&nbsp;&nbsp;
+				a(data-role="button" data-action="start") Complete Sleep Journal
+			div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+		br
+		hr
+		br
+		h1.circadiosHeader This Week's Content
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('insomnia.isWeekOne')")
+			div(style="text-align: center")
+				img(src="#: getResUrl('insomnia.jpg') #",style="width: 160px;")
+			h2 Week 1
+			h2 What is insomnia?
+			p Insomnia is the inability to obtain adequate sleep and/or poor sleep quality which results in some form of daytime impairment. Adequate sleep for most adults is defined as 7-9 hours. If the insomnia has been present for less than 3 months it may be labeled short term insomnia.
+			p
+				span Insomnia is characterized by at least one of the three following issues:
+				ol 
+					li Sleep Latency - the inability to efficiently initiate sleep
+					li The inability to maintain sleep through the night
+					li Waking up earlier than desired
+			p The National Institute of Health (NIH) estimates that ~ 30% of the general population complains of sleep disruption and another ~ 10% have associated symptoms of daytime functional impairment consistent with a diagnosis of insomnia.
+			p In order to better understand the strengths and weaknesses of your sleep, the first step is collecting data to see patterns about your sleep. Based on this information, we can work with you to develop an individualized care plan on how to improve your sleep.
+			p We’ll be sending a text reminder each morning for you to complete your sleep journal.  In two weeks we will review the results and understand the best way we can improve your sleep.
+			p
+				span In the sleep diary we will be tracking the following: 
+				ul
+					li Bedtime
+					li Risetime
+					li Naps
+			p
+				| As you are collecting this data, a
+				strong  first goal is to try to keep the same sleep schedule. Doesn’t matter if it’s a week days, weekends, work days and non work days. Consistence is key.
+				|  Additionally, we are human with much variation in our days, so of course there are days where you will feel more or sleep sleepy at bed time. Although it is most be beneficial to keep the same bed time and rise time every day, it is also important that we do not force ourselves to go to bed when we do not feel drowsy. So, between the rise time and bed time, a consistent rise time is the most important, and over time a consistent bed time will then fall into place easier. 
+			p Don’t let the data collection for the sleep diary heighten or intensify your insomnia. Again, our biggest goal of the sleep diary is to start  seeing patterns about your sleep emerge. 
+		
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekTwo')")
+			h2 Week 2
+			ul
+				li The gold standard is Cognitive Behavioral Therapy for Insomnia (CBT-I). CBT-I is a psychological approach for treating insomnia, composed of educational, cognitive, and behavioral components, to improve maladaptive thinking and behaviors that prevent individuals from sleeping well. In certain situations, it can be used in combination with a short course of sleep medications. Although sleep medications are often helpful in the short term, clinical studies have shown, CBT-I treatment is the more effective approach.
+				li Below are the 3 main components of CBT-I that we will be focusing on
+				ol 
+					li Educational components include: sleep hygiene
+					li Cognitive components include: managing sleep-related worries, intrusive thoughts, and racing thoughts
+					li Behavioral components include: stimulus control, relaxation training (+/- biofeedback), and sleep compression
+				li One well known model of insomnia is called the “3P Behavioral Model”.
+			div(style="text-align: center")
+				img(src="#: getResUrl('3p.jpg') #",style="width:100%;max-width:600px")
+			ul 
+				li This model is helpful to understand that although we have very little control over modifying predisposing and precipitating factors, we are very much able to modify  “perpetuating factors”, which can very effectively treat short-term and chronic insomnia. 
+				li In regard to sleep medications, since melatonin is available without a prescription, it is very widely used. However, in large research trials, melatonin has not been found to be effective as a sleep aid. Instead, it is very effective to shift the timing of your sleep, such as to help with jet lag. Additionally, it is important to note that melatonin is not regulated by the FDA and content of the supplement may differ from what is listed on the product label.  
+				li Over the next several weeks, we will be going through the main components of CBT-I. Each section is presented in a specific order, so that every new lesson or plan can build on the prior. Although some recommendations may be something you have already worked on in the past on your own, learning the cognitive approach of why we are making these recommendations will help solidify lifelong positive changes to your sleep. Explaining why we make recommendations are sometimes just as important as the actual recommendations themselves. This is an essential part of the cognitive behavioral approach. 
+			
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekThree')")
+			h2 Week 3
+			h2 Your Sleep Environment
+			h3 Mattress:
+			p Optimizing your sleep environment is one the most critical aspects to achieving good sleep. Since we spend about a third of our lives sleeping, the comfort and quality of your mattress can very much hurt or help your sleep. While there is no one perfect mattress, mattresses that are adjustable, and better yet smart mattresses, can offer a high level of personalization and customization. And specifically for smart mattresses, one can get actual feedback about his/her sleep. Although a smart mattress may be out of several peoples budgets, just ensuring you have a mattress that you find comfortable and relaxing is worth it. Most companies have a reasonable return policy after trying out the mattress. Also know that on average, a mattress should be replaced every 7-10 years. 
+			h3 Sheets, pillows, temperature:
+			p Take the time to also find comfortable sheets and a pillow style you are happy with. When selecting sheets, you want to ensure you can remain cool at night. Core body temperature cycles along with our sleep-wake rhythm. Sleep is most likely to occur when core body temperature decreases at night and you will have difficulty initiating sleep when it is increasing. A drop in core body temperature is also important to maintain sleep. The sleep and temperature pattern associated with sleep begins with a decrease in core body temperature 1 to 2 hours prior to the start of sleep. The resulting drop in body temperature also coincides with an increase in circulating melatonin levels.
+			p 
+				| Therefore, in order to decrease the amount of time needed to get to sleep (sleep latency) we need to help assist the body’s temperature regulation. Maintaining your bedroom's ambient temperature around 60-67 degrees Fahrenheit and 40-60% humidity can also help. Although the optimal temperature range and comfort levels vary from individual to individual, 
+				strong staying on the cooler end of the spectrum is the key
+			div(style="text-align: center")
+				img(src="#: getResUrl('Graph-02.jpg') #",style="width:100%;max-width:600px")
+			h3 Blankets:
+			p When selecting blankets, some individuals find a weighted blanket more comfortable. Just ensure you have the flexibility to easily take it off if needed to properly regulate your core body temperature. Also, using duvet inserts with a comforter is fairly common, so take into consideration the material of the filling-  such as down, feathers, or down alternative fibers. It can often be helpful to have different inserts for different seasons. Lastly, your pajamas need to fit comfortably and allow you to be cool at night. Take the time to figure out what is most comfortable for you. 
+			h3 Sound:
+			p Ensuring your bedroom has the optimal sound set up is also key. Some individuals like the bedroom to be extremely quiet, others like a constant white noise in the background, and others need a white noise to drown out unpleasant sounds, such as from the outside street, neighbors, a pet, or even a partner. 
+			p Ear plugs/buds can be used to filter out sounds. There are also several apps that can be downloaded with different background white noise options or sound machines that are available for purchase.
+			h3 Light:
+			p Light in the bedroom is very important. Dimmers can help with the transition of getting drowsy and relaxed before getting into bed. Blue light specifically suppresses melatonin from being released in our brains which makes it harder to fall asleep.
+			p Besides limiting your own electronic device usage before bed, ensure these devices are not emitting light during the night, such as a clock on your night stand, a TV, or your phone. Sometimes an eye mask is needed or can be very helpful. Also, preventing light from entering through the windows, both at night and in the morning, is important to think about. Black out curtains can be a very worthwhile investment and make a big difference. 
+			div(style="text-align: center")
+				img(src="#: getResUrl('sunlight-01.jpg') #",style="width:100%;max-width:600px")
+			h3 Bed partners:
+			p Other individuals in the bedroom can also prevent you from getting your most restful sleep. It is not always your bed partner, often pets in the bedroom and in the bed can be very disruptive. Children are also a big source of disruption in the bedroom, and sometimes individuals need to be creative or take the time to figure out how to minimize these distractions in the bedroom. This can take a lot of team work with a bed partner or others that live in your home, especially if your bed partner is a big source of disruption of your sleep. However, having these tough discussions can make a long lasting positive impact on your sleep. 
+			p Goal: Work on optimizing the below elements of your sleep environment
+
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekFour')")
+			h2 Week 4
+			h2 Substance/Activities/Habits
+			h3 Caffeine Intake
+			p Caffeine intake can worsen insomnia by making it more difficult to initiate sleep (increasing sleep latency) and impairing your ability to remain asleep which is known as sleep maintenance. Caffeine is one of the most widely consumed substances in the world. It is estimated that in the United States 90% of adults consume caffeine infused beverages which may be in the form of coffee, tea, soda, energy drinks, or even coffee. Caffeine is also found in chocolate in varying amounts. For how caffeine works at the molecular level, check out this blog post on the Circadios website.
+			p Therefore, it is important to manage the effects of caffeine on your sleep. This means managing the dose and timing of caffeine intake. Caffeine is quickly absorbed by the body reaching peak levels in the bloodstream within 30 minutes. However, it may stay active for up to 6-10 hours after ingestion. The length of activity is dependent on many factors including genetic differences, other medications and dose.
+			p Studies have demonstrated that caffeine taken up to 6 hours prior to bedtime can affect sleep.
+			h3 Incorporating Exercise
+			p There are multiple health benefits to developing and maintaining a regular exercise program. Our focus is the effect of exercise on sleep. In particular, regular aerobic exercise has been demonstrated to increase sleep duration, sleep quality, mood and cognitive abilities.
+			p The type of exercise which has been studied most extensively for sleep is moderate aerobic exercise. This may consist of using an exercise bike, treadmill or walking. The measure of sufficient exercise is best accomplished by measuring your heart rate. The most important step is to START exercising in small increments and build up your aerobic capacity to achieve exercise for sleep improvement targets.
+			p
+				| Some heart rate monitors we'd recommend are the 
+				a(href="https://amzn.to/3FqCHuy") Apple Watch,
+				a(href="https://amzn.to/3DhlEIG") Fitbit,
+				| or
+				a(href="https://amzn.to/3sBm47L") Garmin
+			p
+				strong Goal:
+				| One 35 minute session of aerobic exercise 3-4 times a week at 75% of maximum heart rate.
+			p If you do not already regularly exercise at baseline, here is an example of a conditioning period:
+			ul
+				li Week 1: 10-15 minutes/day of selected exercise (walk, bike or run) at 55% maximum heart rate
+				li Week 2: 15-20 minutes/day at 60% maximum heart rate
+				li Week 3: 20-25 minutes/day at 65% maximum heart rate
+				li Week 4: 25-30 minutes/day at 70% maximum heart rate
+				li Weeks 5-6: 30-40 minutes/day at 75% maximum heart rate
+
+			p How to determine your maximum heart rate
+			ul
+				li If you are not physically active:	220 – Age = Maximum Heart Rate
+				li If you are physically active:	211 – 0.64 x Age = Maximum Heart Rate
+			p An important component of preventing and treating insomnia is decreasing awakenings during sleep. This leads to improved sleep quality and efficiency and an upgrade in our energy levels, cognitive function and overall health. We will review several factors which may impact our ability to maintain sleep.  We will focus on alcohol, nighttime urination and pain.
+			h3 Alcohol:
+			p Alcohol has been demonstrated to negatively affect sleep through a variety of mechanisms. Although alcohol may make it easier to initially fall asleep, this sedative quality is very short lasting, and ultimately alcohol negatively impacts sleep. More specifically, alcohol suppresses REM sleep during the first half of sleep. Overall, these sleep cycle disturbances result in sleep fragmentation and nighttime awakenings.
+			div(style="text-align: center")
+				img(src="#: getResUrl('alcohol effect-01.jpg') #",style="width:100%;max-width:600px")
+			p Perhaps most important is the role of alcohol and sleep apnea. In order to better understand this relationship we will review sleep apnea and the upper airway.
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekFive')")
+			h2 Week 5
+			h2 Substance/Activities/Habits Part 2
+			h3 Sleep apnea:
+			p Alcohol functions as a sedative and creates relaxation of your upper airway predisposing you to sleep apnea. Sleep apnea leads to decreased levels of oxygen and sleep fragmentation, which ultimately worsens insomnia. If you believe you might be suffering from sleep apnea, please let your sleep coach know.
+			h3 Urination or urgency:
+			p Compounding its effect on the airway and sleep cycle, alcohol also functions as a diuretic. This results in the increased urgency to urinate at night, known as nocturia, which is one of the most frequently reported reasons for poor sleep. We can help you locate a urologist
+			p Goal: Avoid alcohol 4-6 hours before going to sleep.  Reduce drinking of water and other liquids 2 hours before going to sleep.
+			h3 Food:
+			p The types of food you eat and the timing of when you eat impacts sleep. If you eat too close to your bedtime, or eat particular foods that require a more complex digestive process, your body is prioritizing  digestion rather than sleep. For example, studies have shown that foods high in carbohydrates or with high glycemic indexes can impair sleep quality and lead to increased number of night time awakenings and reduced amounts of deep sleep. Try to avoid eating within 3 to 4 hours of sleep. Additionally, foods that are high in fat, like yogurt, are more optimal if needed to be eaten closer to bedtime. 
+			h3 Napping:
+			p Circadian rhythms are physical, mental, and behavioral changes that follow a 24 hour cycle. Our circadian rhythm that is involved with sleep, has a pattern whereby our urge to sleep (termed “sleep drive”) is lowest when we wake up in the morning, and increases as the day goes on, which helps us drift into sleep easier at bedtime. Interestingly, the times we are the sleepiest are before bedtime, but also in the early afternoon. Napping in general, will decrease ones sleep drive throughout the day, and napping closer to ones bedtime exacerbates this further. Additionally, the duration of a nap very much impacts how one feels when they wake up from it. 
+			p If a nap is unavoidable, “power naps”, or for examples naps less than 20 minutes, are most optimal since they do not usually allow individuals to reach the deep stages of sleep, and waking up from a deep sleep stage often leads to one feeling more tired or groggy, rather than waking from a light sleep stage. If you struggle with insomnia, avoid napping completely if possible. If unavoidable, avoid napping longer than 20 minutes (set an alarm!) and avoid napping closer to your bedtime. 
+			div(style="text-align: center")
+					img(src="#: getResUrl('sleep chart-01.jpg') #",style="width:100%;max-width:600px")
+		
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekSix')")
+			h2 Week 6
+			h2 Buffer Zone
+			p We all know people that can get in bed and as soon as their head hits the pillow, they fall asleep almost instantly. However, for those struggling with insomnia, drifting into sleep can be much more challenging. Thus, it is critical for those that have trouble initiating their sleep to ensure they have an adequate buffer zone. This is a period of time, anywhere between 30 to 60 minutes before getting into bed, where you wind down or “power down” to help with the transition into sleep. 
+			p During this time, you should optimize your environment and behavior. Lights can be dimmed, electronic devices shut off (or anything emitting blue light into eyes), blue blocking glasses or apps can be used if needed, relaxing music or background sound/noise can be turned on, or one can opt for pure “quiet” time. You should partake in relaxing and enjoyable activities, such as reading, drinking chamomile tea, meditating, knitting, yoga, stretching, or deep breathing. You should avoid engaging in activities that can be activating or stressful, such as emailing, texting, talking on the phone, watching/binging an exciting TV show or series.This buffer zone can be a period of time that you look forward to each day, where you can truly unplug from the physical and mental duties of life, and just wind down in your preferred manner. It is often helpful to set an alarm for when this buffer zone should start each day. 
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekSeven')")
+			h2 Week 7
+			h2 Routine
+			p Having a regular bedtime and rise time routine is critical to making you feel sleepy and awake at the appropriate times, and impacts your ability to fall asleep, stay asleep, and have a good quality of sleep. Our sleep cycle is based on our internal clock that tells us when it is time to sleep and when it is time to be awake. One of the biggest contributors to setting our internal clocks is exposure to bright light, such as the sun. Additionally, the more regular our sleep schedule is, the easier it will be to fall asleep and wake up at our desired times. You should go to bed and wake up at the same time every day, including weekends. Even if you initially have difficulty falling asleep at the same time, doing this regularly over time will in the long term help adjust your body's clock and ultimately aid in falling asleep at night. 
+			p
+				|In the beginning, if you are struggling to stick to a regular bedtime and rise time, it is more important to focus on sticking to a regular rise time, as we often do not feel sleepy at the same time each day, and forcing yourself to lay in bed awake, can in the bigger picture worsen your insomnia. When initially choosing a bedtime, try to choose a time where your internal clock tends to feel more sleepy. Keeping in mind, all the different factors we have been working on with you, will attempt to make you feel more awake in the morning and throughout the day, but also make you feel more drowsy towards bedtime. 
+				strong Consistency is the key for this.
+			p If you are specifically having difficulty waking in the morning, within 20 minutes of getting out of bed, try to get outside for 30-45 minutes with direct sunlight into your eyes. Walking or exercise is an ideal way to achieve this, however, you can also sit on a porch or in the backyard and read the news or drink coffee or tea. Even if it is overcast, sunlight can still enter your eyes, which is alerting, and this suppresses the release of melatonin in your brain. Do not wear a hat with a rim, sunglasses, or shades over your eyes. The sun is one of the most important and natural “medications” that can make us feel awake! 
+			p 
+				| If this technique is not possible or convenient for your schedule, you can consider bright light therapy. There are 4 basic types of 
+				a(href="https://sleepeducation.org/patients/bright-light-therapy/") bright light therapy:
+				| a light box, desk lamps, a light visor, or a dawn simulator. Keep in mind, that over time, the more awake you feel in the morning and throughout the day will help you be more active and alert during the day, and as the day goes on, your sleep need will increase, and later at night you will then feel more sleepy during your desired bedtime. 
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekEight')")
+			h2 Week 8
+			h2 Stimulus Control
+			p Your bed should conjure up sleepy thoughts and sleep should be more of a passive process than an active process. Often the “harder” you try to sleep, the more difficult it becomes. You may be familiar with classical conditioning and Pavlov’s dog:
+			div(style="text-align: center")
+				img(src="#: getResUrl('dog food-01.jpg') #",style="width:100%;max-width:600px")
+			p Just like the dog in the diagram above, you want the bed to elicit a response whereby your body feels automatically like drifting into sleep when your head hits the pillow. 
+			div(style="text-align: center")
+				img(src="#: getResUrl('sleep2.png') #",style="width:100%;max-width:600px")
+			p There are several ways to strengthen this response. These include only using your bed for sleep and sex. Avoid other activities in bed, as the bed will then conjure up other feelings or emotions (even if they are at the subconscious level!). You also want to avoid stimuluses when in bed that wake you up or alert you more, such as looking at the clock, or “clock watching”. There is no need to look at the clock if you set an alarm. Scrolling through your phone is also a common bad habit, which can be very activating, and the phone can emit blue light. As we previously discussed, having a buffer zone and keeping a regular bedtime and rise time is critical. 
+			p 
+				|However, 
+				strong only get in bed when you are drowsy.&nbsp;
+				| Laying in bed awake creates an unhealthy conditioned association between your sleep environment and wakefulness. You don’t want to think of your bed as a miserable place where you try to fall asleep and regularly have difficulty. You instead want to feel relaxed and able to drift peacefully into sleep. If you are unable to fall asleep within an estimated 20 minutes of getting in bed (just approximate, do not look at the clock), get up and go to another space in your home and engage in a relaxing activity in dim light. When you feel drowsy, then return to bed. Some relaxing activities in dim light include: guided meditations, listening to a podcast/music/audio book, knitting, reading a boring book or magazine (avoid blue light shining into eyes), folding clothes, light cleaning, or drinking a cup of chamomile tea.
+			p If your mind just won’t shut off, you can have an actual book or notepad next to your bed, called a “worry book”. Write down everything that is on your mind and preventing you from drifting into sleep. Sometimes you may even need to write in the worry book more than once in a night. However, it is very helpful to get the thoughts or lists of “things to do” out of your mind and onto a piece of paper. The above techniques can be helpful for both initially falling asleep, or if you awaken in the middle of the night and have difficulty returning back to sleep. Different relaxing activities are helpful for different individuals, so good luck finding out what works best for you!
+		
+		div.circadios-content-container.week-two(data-bind="visible: getBoolean('insomnia.isWeekNine')")
+			h2 Week 9
+			h2 Sleep Compression or Sleep Restriction
+			p It is common for those with insomnia to spend too much time laying in bed awake. This reinforces a poor relationship with one's bed and sleep, and it often worsens insomnia. For example, if someone knows by reviewing their sleep diary, that they never are able to fall asleep earlier than midnight, getting into bed before midnight, such as at 10pm, is not only not helpful, it can actually be harmful! Although this sounds logical, it is a very common behavior that individuals with insomnia regularly engage in, without realizing the negative consequences of this behavior. 
+			p Another common example, is that someone knows clearly by their sleep diary that when they get in bed at 10pm and can easily fall asleep, that they always wake up at 3am and are unable to return back to sleep. Yet they still force themselves to lay in bed between 3am and 6am. So they are in bed for 8 hours, but only asleep maximally for 5 hours any given night. 
+			p
+				|A well-established and common technique for improving difficulty falling asleep and/or maintaining sleep, is a technique called 
+				strong “sleep compression”.&nbsp;
+				| This is a method of behavior modification where there is a gradual, step-wise reduction of time in bed until the target total sleep time is reached. Specifically, the therapeutic goal of sleep compression is to eliminate the TIB-TST discrepancy by cutting TIB in incremental parts over several weeks. A common scenario is to do this over 6 weeks, to shrink TIB to match TST. And the number of weeks this is done over can be adjusted accordingly based on the magnitude of the TIB-TST discrepancy. 
+			p
+				|Sleep compression is similar but also different from a more drastic approach, called 
+				strong “sleep restriction”&nbsp;
+				|, which is also commonly implemented and effectively used. With this approach, the time in bed is immediately reduced to the total sleep time, then TST is slowly increased after TIB is reduced. 
+
