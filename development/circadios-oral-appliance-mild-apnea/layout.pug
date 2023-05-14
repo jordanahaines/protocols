@@ -9,22 +9,24 @@ div.top-container
 			br
 			hr
 			br
-		h1.circadiosHeader Sleep Journal
-		p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
-		div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
-			div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
-				| Please complete today's sleep journal:&nbsp;&nbsp;
-				a(data-role="button" data-action="start") Complete Sleep Journal
-			div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
-		br
-		hr
-		br
 		h1.circadiosHeader This Week's Content
 		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+
 			div(style="text-align: center")
-				img(src="#: getResUrl('protocol.png') #",style="width: 160px;")
+				img(src="#: getResUrl('protocol.png') #",style="width: 200px;")
 			h2 Week 1
-			h2 What is Obstructive Sleep Apnea?
+			h2 Sleep Position (1) w/ Oral Appliance
+			h3 What is Obstructive Sleep Apnea?
 			p Obstructive Sleep Apnea is a medical condition which occurs during sleep produced by obstruction of airflow through your nose and throat. The obstruction results in a reduction or complete obstruction of airflow and results in decreased oxygen (known as hypoxia) being delivered to your body. As a response to the hypoxia and in order to re-open the airway, the brain signals your body to increase muscle tone in your airway. This pattern of hypoxia and the body’s response to open the airway interrupts your normal sleep pattern. The combination of a lack of normal oxygen and interrupted sleep pattern may lead to several medical problems.
 			p Obstructive sleep apnea is classified based on the number of episodes of alterations in your breathing. A decrease in airflow is known as hypopnea and a complete obstruction is an apnea. The number of apnea and hypopnea events per hour determines the severity of your sleep apnea.
 			p Mild Obstructive Sleep Apnea is defined as 5 to 15 episodes of apnea/hypopnea in 1 hour. There are several signs which are monitored during your sleep study. These include heart rate, oxygen level and overall sleep pattern.
@@ -74,4 +76,85 @@ div.top-container
 			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
 			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
 			p You should avoid the use of any narcotics or sedatives.
+		div.circadios-content-container(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('osa2.png') #",style="width: 200px;")
+			h2 Week 2
+			h2 Sleep Position (2) w/ Oral Appliance
+			h3 A review of your treatment plan.
+			p Your diagnosis is mild obstructive sleep apnea. We are starting with oral appliance therapy, sleep hygiene and positioning to treat this condition.
+			p The goal for weeks 1 and 2 are to begin using your oral appliance and avoid sleeping on your back and preferably sleep on your side.
+			p
+				strong Goal: 
+				| Advance your oral appliance to the 2mm mark if comfortable and begin consistent use of the device at night.
+			p Next, we will focus on the side sleeping position.
+			p
+				strong Goal: 
+				| Avoid sleeping on your back
+			p A quick review of why this sleep position is important to improve your sleep.
+			p Obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping on your back promotes structures in your mouth and throat to drop into the airway and contribute to the blockage of air.
+			p The simplest way to avoid sleeping on your back may be with a more comfortable pillow designed to promote sleeping on your side or by placing an extra pillow alongside your back. However, if you have still had difficulty adopting a side sleeping position there are several other sleep devices to help you sleep on your side. Perhaps the simplest and least expensive is a tennis ball.
+			p This involves taping a tennis ball to the back of your pajamas or shirt to prevent you from rolling over to your back. This may be cumbersome to repeat every night and we recommend evaluating the 
+				a(href="https://amzn.to/3zjWfwZ") iSleepfit 
+				| positioner or 
+				a(href="https://amzn.to/3gzkSiu") Sleep Noodle.
+			p If you find the above is not enough help to keep you sleeping on your side, then you may want to consider a sleep position trainer. There are 
+				a(href="https://doi.org/10.5664/jcsm.4460") studies
+				| supporting the effectiveness of these devices for the treatment of mild obstructive sleep apnea. One option is the 
+				a(href="https://www.usa.philips.com/c-e/hs/sleep-apnea-therapy/i-was-just-diagnosed-with-sleep-apnea/cpap-alternative.html") Night Balance by Phillips.
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.
 
+		div.circadios-content-container(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalThree.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalThree.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('elevated.png') #",style="width: 200px;")
+			h2 Week 3
+			h2 Elevated Head (1) w/ Oral Appliance
+			p This week will focus on advancement of your oral appliance and a second sleep hygiene measure to improve your mild obstructive sleep apnea.
+			p
+				strong Goal: 
+				| Advance your oral appliance to the 2mm mark if comfortable and begin consistent use of the device at night.
+			p Next, we will focus on the side sleeping position.
+			p
+				strong Goal: 
+				| Advance your oral appliance to 3mm and consistent use at night.
+			p Tips to keep your oral appliance clean:
+			ul
+				li Brush your oral appliance before and after use
+				li Wash your appliance with hand soap (not toothpaste) after use
+			h3 Elevate Head Positioning
+			p This week will focus on a second sleep hygiene measure to improve your mild obstructive sleep apnea. The goal is to elevate your head positioning during sleep.
+			p A review of 
+				a(href="https://www.usa.philips.com/c-dam/b2c/master/experience/hs/sleep-apnea-therapy/overview/obstructed-airway-side.png") your airway anatomy
+				| will help to explain how the elevation of your head in combination with side sleeping position (from last week) helps treat your sleep apnea. Obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping lying flat on your bed, known as supine, promotes the structures in your mouth and throat to drop into the airway and contribute to the blockage of air. 
+				a(href="https://link.springer.com/article/10.1007/s11325-017-1524-3") Studies have shown
+				| that raising your head position by elevating the head of your bed reduces the downward pressure on the soft tissues of the base of your tongue and palate. In turn, there is less collapse and obstruction of the airway improving your sleep apnea. Surprisingly, just a minor amount of elevation may significantly reduce your airway obstruction. We recommend a 10-15 degree of elevation of the head of your bed.
+			p A simple technique to achieve head of bed elevation is to use a 15-cm high piece of wood or brick under the head-of-bed legs.
+			p Alternatively, you may review 
+				a(href="https://amzn.to/3gDukBr") bed risers
+				| or a 
+				a(href="https://amzn.to/3TEHn4t") bed wedge.
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.

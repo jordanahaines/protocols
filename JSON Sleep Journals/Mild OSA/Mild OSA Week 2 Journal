@@ -1,0 +1,32 @@
+
+{
+    "formName": "Mild OSA - Week 1",
+    "formOptions": {
+                "privateForm": false,
+		"logKey": "mild_osa_week1",
+		"dateFormat":"DD MMM YYYY" // should the form visualize the creation date in the result 
+	 },
+    "questions": [
+     
+        {
+            "q":"What time did you fall asleep?",
+            "type": "select_value",
+            "choices": [ "8 PM or earlier", "9 PM", "10 PM", "11 PM", "12 AM", "1 AM", "2 AM", "3 AM or later" ]
+        },
+        {
+            "q":"I slept __ hours last night (ex. 8.5 )",
+            "type": "freetext"
+        },
+        {
+            "q": "What time did you wake up?",
+            "type": "singlechoice",
+            "choices": [ "5 AM or earlier", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 PM or later" ]
+        },
+        {
+            "q": "Did you sleep on your side?",
+            "type": "singlechoice",
+            "choices": [ "Yes", "No" ]
+        },
+        
+    ]
+}

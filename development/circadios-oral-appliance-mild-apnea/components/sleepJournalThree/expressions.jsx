@@ -8,7 +8,7 @@ export default class SleepJournalOne {
     // Find Sleep Journal One Form
 
     const sleepJournalOne = (this.protocol.clientItems || []).find((x) => {
-      if (x.formName !== "Sleep Journal One - Mild OSA w OA") return false;
+      if (x.formName !== "Sleep Journal Three - Mild OSA w OA") return false;
       const diff = moment().diff(moment(x.dateCreated), "h");
       return diff < 18;
     });
