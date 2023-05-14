@@ -1,8 +1,8 @@
 {
   "forms": [
     {
-      "id": "mildosa3",
-      "formName": "Mild OSA - 3",
+      "id": "modosa3",
+      "formName": "Moderate/Severe OSA - 3",
       "patientDetails": {
         "skip": true
       },
