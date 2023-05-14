@@ -1,0 +1,10 @@
+{
+	"actions": [
+		{
+			"type": "custom",
+			"data": {
+				"welcome": true
+			}
+		}
+	]
+  }

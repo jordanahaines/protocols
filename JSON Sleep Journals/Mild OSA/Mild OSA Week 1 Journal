@@ -10,7 +10,7 @@
      
         {
             "q":"What time did you fall asleep?",
-            "type": "select_value",
+            "type": "singlechoice",
             "choices": [ "8 PM or earlier", "9 PM", "10 PM", "11 PM", "12 AM", "1 AM", "2 AM", "3 AM or later" ]
         },
         {

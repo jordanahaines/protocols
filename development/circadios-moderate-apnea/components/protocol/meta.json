@@ -1,0 +1,57 @@
+{
+  "forms": [
+    {
+      "id": "intake",
+      "formName": "Intake",
+      "patientDetails": {
+        "skip": true
+      },
+      "questions": [
+        {
+          "q": "You wake up in the morning tired and do\n\n not feel refreshed",
+          "type": "select_from_range",
+          "choices": ["1", "2", "3", "4", "5"],
+          "minText": "Strongly Disagree",
+          "maxText": "Strongly Agree"
+        },
+        {
+          "q": "You have trouble falling asleep.",
+          "type": "select_from_range",
+          "choices": ["1", "2", "3", "4", "5"],
+          "minText": "Strongly Disagree",
+          "maxText": "Strongly Agree"
+        },
+        {
+          "q": "You have difficulty staying asleep.",
+          "type": "select_from_range",
+          "choices": ["1", "2", "3", "4", "5"],
+          "minText": "Strongly Disagree",
+          "maxText": "Strongly Agree"
+        },
+        {
+          "q": "How much energy do you have throughout the day?",
+          "type": "select_from_range",
+          "choices": ["1", "2", "3", "4", "5"],
+          "minText": "I always have energy throughout the day",
+          "maxText": "I have no energy"
+        },
+        {
+          "q": "How many times a week do you get at least 8 hours of sleep?",
+          "type": "singlechoice",
+          "choices": ["6-7 times", "4-5 times", "2-3 times", "0-1 times"]
+        },
+        {
+          "q": "Do you snore? And if so, how often",
+          "type": "singlechoice",
+          "choices": ["Never snore", "Some nights", "Every night"]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "copy",
+      "event": "complete"
+    }
+  ]
+}

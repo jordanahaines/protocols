@@ -1,8 +1,8 @@
 {
   "forms": [
     {
-      "id": "mildosa1",
-      "formName": "Mild OSA - 1",
+      "id": "mildosa3",
+      "formName": "Mild OSA - 3",
       "patientDetails": {
         "skip": true
       },
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "q": "Did you sleep on your side?",
+          "q": "Did you sleep with your head raised?",
           "type": "singlechoice",
           "choices": ["Yes", "No"]
         }

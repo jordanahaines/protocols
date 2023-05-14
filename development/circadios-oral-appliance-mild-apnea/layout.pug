@@ -158,3 +158,52 @@ div.top-container
 			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
 			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
 			p You should avoid the use of any narcotics or sedatives.
+
+		div.circadios-content-container(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalThree" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalThree.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalThree.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('elevated.png') #",style="width: 200px;")
+			h2 Week 4
+			h2 Elevated Head (2) w/ Oral Appliance
+			p Hopefully, you are starting to experience better sleep quality with less snoring and apnea. You are treating your mild obstructive sleep apnea with sleep hygiene measures. This is the second week of combining your side sleep position with head-of-bed elevation.
+			p
+				strong Goal: 
+				| Advance your oral appliance to the 2mm mark if comfortable and begin consistent use of the device at night.
+			p Next, we will focus on the side sleeping position.
+			p
+				strong Goal: 
+				| Advance oral appliance to 4mm and consistent use at night
+			p
+				strong Goal: 
+				| Adjust to sleeping with your head elevated
+			p You will be meeting with your Circadios Sleep Practitioner this month.
+			p We want you to review how you are doing with your oral appliance.
+			ul
+				li Using the oral appliance nightly
+				li Comfortable fit
+				li Relief of mild sleep apnea symptoms: snoring less and feeling less tired in the morning
+			p Raising your head position by elevating the head of your bed reduces the downward pressure on the soft tissues of the base of your tongue and palate. In turn, there is less collapse and obstruction of the airway improving your sleep apnea. Head-of-bed elevation may also improve decreasing the amount of normal body tissue fluid and swelling shifted to the upper airway during sleep in a supine position.
+			p An additional benefit of elevating the head of your bed is this may help treat gastroesophageal reflux.
+			p Surprisingly, just a minor amount of elevation may significantly reduce your airway obstruction. We recommend a 10-15 degree of elevation of the head of your bed.
+			p Last week, we discussed simple techniques to achieve head of bed elevation utilizing a 15-20 cm high piece of wood or brick under the head-of-bed legs, bed risers or a bed wedge.
+			p Alternatively, you may review 
+				a(href="https://amzn.to/3gDukBr") bed risers
+				| or a 
+				a(href="https://amzn.to/3TEHn4t") bed wedge.
+			p If you have difficulty with the use of the above, another alternative would be an adjustable frame. If you're interested, we've listed some adjustable frames.
+			ul
+				li Puffy Adjustable Base
+				li Saatva Lineal Adjustable Base Bed
+				li Nectar Adjustable Bed Frame
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.

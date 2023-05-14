@@ -1,0 +1,23 @@
+{
+  "forms": [
+    {
+      "id": "schedule_form",
+      "formName": "Schedule Form",
+      "patientDetails": {
+        "skip": true
+      },
+      "questions": [
+        {
+          "q": "Select your doctor to schedule an appointment:",
+          "type": "select_doctor"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "copy",
+      "event": "complete"
+    }
+  ]
+}

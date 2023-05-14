@@ -9,18 +9,18 @@ div.top-container
 			br
 			hr
 			br
-		h1.circadiosHeader Sleep Journal
-		p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
-		div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
-			div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
-				| Please complete today's sleep journal:&nbsp;&nbsp;
-				a(data-role="button" data-action="start") Complete Sleep Journal
-			div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
-		br
-		hr
-		br
 		h1.circadiosHeader This Week's Content
 		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
 			div(style="text-align: center")
 				img(src="#: getResUrl('protocol.png') #",style="width: 160px;")
 			h2 Week 1
@@ -44,17 +44,112 @@ div.top-container
 			p We recommend discussing a cardiology evaluation with your primary care physician.
 			p There are several treatment options for your mild obstructive sleep apnea.
 			p A combination of lifestyle and sleep hygiene measures may be sufficient to treat your sleep apnea. In addition to lifestyle and sleep hygiene, addressing causes of airway obstruction such as nasal obstruction may be helpful. In other cases, we may recommend an oral appliance or positive airway pressure (pap) device known as an automatic pap (apap). We are starting with adjustments to your lifestyle and sleep hygiene.
-			p We are starting with adjustments to your lifestyle and sleep hygiene in combination with oral appliance therapy (OAT).
-			h2 Oral Appliance Therapy
-			p An oral appliance is a mouthpiece device designed to improve the positioning of your jaw and tongue to open and prevent collapse of your upper airway.  Several other common names for oral appliance devices are mandibular advancement devices or mandibular advancement splints.
-			p The most common mechanism is to hold your lower jaw in a more anterior position. This positioning expands the airway laterally and through forward movement of the tongue and tongue base.
-			p Let us begin by purchasing an oral appliance therapy device.
-			p We recommend the 
-				a(href="https://www.vitalsleep.com/?rfsn=6954321.815dbd2") Vital Sleep 
-				| or 
-				a(href="https://apnearx.com/") ApneaRx 
-				| or 
-				a(href="https://www.snorerx.com/") SnoreRx.
-			p Goal: Purchase and fit oral appliance device to begin to feel comfortable using at night.
-			p We will combine the oral appliance with an adjustment to your sleep position.
-			p.red *Potential side effects of an oral appliance over time are possible jaw pain or misalignment of your bite. Thus, it is important to monitor these factors with a dentist. 
+			h3 Sleep Position 
+			p The optimal position for treating your mild obstructive sleep apnea is a side sleeping position. You may also choose a face down sleep position but need to ensure the pillow or sheets do not obstruct your mouth or nose.
+			p
+				strong Avoid sleeping on your back!
+			p Why?
+			p Remember, obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping on your back promotes structures in your mouth and throat to drop into the airway and contribute to the blockage of air.
+			h3 Treatment Options
+			p The simplest way to avoid sleeping on your back may be with a more comfortable pillow designed to promote sleeping on your side. Additionally, placing an extra pillow alongside your back may be all that is necessary to help you maintain a side sleeping position.
+			p If you need a pillow, we recommend the 
+				a(href="https://amzn.to/3gHQcvP") Eli &amp; Elm Ultimate Side Sleep Pillow
+				| or the 
+				a(href="https://amzn.to/3SNV3ZL") Beckham Hotel Collection Pillows
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('week2.png') #",style="width: 160px;")
+			h2 Week 2
+			h2 Sleep Position (2)
+			p The goal for weeks 1 and 2 are to avoid sleeping on your back and preferably sleep on your side. A quick review of why this sleep position is important to improve your sleep.
+			p Obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping on your back promotes structures in your mouth and throat to drop into the airway and contribute to the blockage of air.
+			p The simplest way to avoid sleeping on your back may be with a more comfortable pillow designed to promote sleeping on your side or by placing an extra pillow alongside your back.
+			p However, if you have still had difficulty adopting a side sleeping position there are several other sleep devices to help you sleep on your side. Perhaps the simplest and least expensive is a tennis ball.
+			p This involves taping a tennis ball to the back of your pajamas or shirt to prevent you from rolling over to your back. This may be cumbersome to repeat every night and we recommend evaluating the 
+				a(href="https://amzn.to/3zjWfwZ") iSleepfit
+				| positioner or 
+				a(href="https://amzn.to/3gzkSiu") Sleep Noodle
+				| or the Slumber Bump. 
+			p If you find the above is not enough help to keep you sleeping on your side, then you may want to consider a sleep position trainer. There are 
+				a(href="https://doi.org/10.5664/jcsm.4460") studies
+				| supporting the effectiveness of these devices for the treatment of mild obstructive sleep apnea. One option is the 
+				a(href="https://www.usa.philips.com/c-e/hs/sleep-apnea-therapy/i-was-just-diagnosed-with-sleep-apnea/cpap-alternative.html") Night Balance by Phillips.
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalThree" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalThree.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalThree.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('week3.png') #",style="width: 160px;")
+			h2 Week 3
+			h2 Elevated head (1)
+			p This week will focus on a second sleep hygiene measure to improve your mild obstructive sleep apnea. The goal is to elevate your head positioning during sleep.
+			p A review of 
+				a(href="https://www.usa.philips.com/c-dam/b2c/master/experience/hs/sleep-apnea-therapy/overview/obstructed-airway-side.png") your airway anatomy
+				| will help to explain how the elevation of your head in combination with side sleeping position (from last week) helps treat your sleep apnea. Obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping lying flat on your bed, known as supine, promotes the structures in your mouth and throat to drop into the airway and contribute to the blockage of air. 
+				a(href="https://link.springer.com/article/10.1007/s11325-017-1524-3") Studies have shown
+				| that raising your head position by elevating the head of your bed reduces the downward pressure on the soft tissues of the base of your tongue and palate. In turn, there is less collapse and obstruction of the airway improving your sleep apnea. Surprisingly, just a minor amount of elevation may significantly reduce your airway obstruction. We recommend a 10-15 degree of elevation of the head of your bed.
+			p A simple technique to achieve head of bed elevation is to use a 15-cm high piece of wood or brick under the head-of-bed legs.
+			p Alternatively, you may review 
+				a(href="https://amzn.to/3gDukBr") bed risers
+				| or a 
+				a(href="https://amzn.to/3TEHn4t") bed wedge.
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalThree" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalThree.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalThree.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			h2 Week 4
+			h2 Elevated head (2)
+			p Hopefully, you are starting to experience better sleep quality with less snoring and apnea. You are treating your mild obstructive sleep apnea with sleep hygiene measures. This is the second week of combining your side sleep position with head-of-bed elevation.
+			p Raising your head position by elevating the head of your bed reduces the downward pressure on the soft tissues of the base of your tongue and palate. In turn, there is less collapse and obstruction of the airway improving your sleep apnea. Head-of-bed elevation may also improve decreasing the amount of normal body tissue fluid and swelling shifted to the upper airway during sleep in a supine position.
+			p An additional benefit of elevating the head of your bed is this may help treat gastroesophageal reflux.
+			p Surprisingly, just a minor amount of elevation may significantly reduce your airway obstruction. We recommend a 10-15 degree of elevation of the head of your bed.
+			p Last week, we discussed simple techniques to achieve head of bed elevation utilizing a 15-20 cm high piece of wood or brick under the head-of-bed legs, bed risers or a bed wedge.
+			p Alternatively, you may review 
+				a(href="https://amzn.to/3gDukBr") bed risers
+				| or a 
+				a(href="https://amzn.to/3TEHn4t") bed wedge.
+			p If you have difficulty with the use of the above, another alternative would be an adjustable frame. If you're interested, we've listed some adjustable frames.
+			ul
+				li Puffy Adjustable Base
+				li Saatva Lineal Adjustable Base Bed
+				li Nectar Adjustable Bed Frame
+			h3 OSA Precautions
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.

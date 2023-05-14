@@ -1,0 +1,199 @@
+{
+  "formName": "Initial Visit Intake Note",
+  "formOptions": {
+    "privateForm": true,
+    "logKey": "initial_visit_intake",
+    "dateFormat": "DD MMM YYYY"
+  },
+  "patientDetails": { "skip": true },
+  "questions": [
+    {
+      "q": "How is your sleep - in general",
+      "type": "singlechoice",
+      "choices": [
+        "Sleep well—I am here because of my bed partner",
+        "I sleep poorly and always tired with lack of energy",
+        "I sleep ok but not sure and want to find out",
+        "Sleep and energy are important for my job/life"
+      ]
+    },
+    {
+      "q": "How long have these sleep difficulties been going of for? (Years/Month)",
+      "type": "freetext"
+    },
+    {
+      "q": "How many times per week does the sleep difficulty occur?",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3", "4", "5", "6", "7"]
+    },
+    {
+      "q": "Do you have an urge to move your limbs in the early part of the night or has anyone noticed any abnormal movements/behavior during the night?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Does your job require shift work? If yes, please describe days/hours.",
+      "type": "freetext"
+    },
+    {
+      "q": "Does your work require frequent air travel? If yes, please describe.",
+      "type": "freetext"
+    },
+    {
+      "q": "EPWORTH SLEEPINESS SCALE (ESS) \nThe following questionnaire will help you measure your general level of daytime sleepiness. You are to rate the chance that you would doze off or fall asleep during different routine daytime situations. Answers to the questions are rated on a reliable scale called the Epworth Sleepiness Scale (ESS). Each item is rated from 0 to 3, with 0 meaning you would never doze or fall asleep in a given situation, and 3 meaning there is a very high chance that you would doze or fall asleep in that situation. \nHow likely are you to doze off or fall asleep in the following situations, in contrast to just feeling tired? Even if you haven't done some of the activities recently, think about how they would have affected you. \nUse this scale to choose the most appropriate number for each situation: \n0 = would never doze\n1 = slight chance of dozing\n2 = moderate chance of dozing  \n3 = high chance of dozing\n\nIt is important that you select a number (0 to 3) for EACH situation.",
+      "type": "form_bot_message"
+    },
+    {
+      "q": "Sitting & reading",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "Watching Television",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "Sitting inactive in a public place (theater/meeting)",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "As a passenger in a car for an hour without a break",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "Lying down to rest in the afternoon",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "Sitting and talking to someone",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "Sitting quietly after lunch (with no alcohol)",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "In a car, while stopped in traffic",
+      "type": "singlechoice",
+      "choices": ["1", "2", "3"]
+    },
+    {
+      "q": "STOP-Bang Questionnaire",
+      "type": "form_bot_message"
+    },
+    {
+      "q": "Snoring - Do you snore loudly (loud enough to be heard through closed doors, or your bed partner elbows you for snoring at night)?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Tired - Do you often feel tired, fatigued, or sleepy during the daytime (such as falling asleep during driving)?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Observed - Has anyone observed you stop breathing or choking/gasping during your sleep?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Pressure - Do you have or are you being treated for high blood pressure?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "BMI over 35?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Age older than 50 years old?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Neck size greater than 16 in collar?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Gender (biologic sex) = Male??",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "STOP-Bang Score \nFor general population \nOSA - Low Risk : Yes to 0 - 2 questions\nOSA - Intermediate Risk : Yes to 3 - 4 questions\nOSA - High Risk : Yes to 5 - 8 questions\nor Yes to 2 or more of 4 STOP questions + male gender\nor Yes to 2 or more of 4 STOP questions + BMI > 35kg/m2\nor Yes to 2 or more of 4 STOP questions + neck circumference 16 inches / 40cm",
+      "type": "freetext"
+    },
+    {
+      "q": "Insomnia Severity Index (ISI) - Rate severity of insomnia problems over the last 2 weeks",
+      "type": "form_bot_message"
+    },
+    {
+      "q": "Difficulty falling asleep",
+      "type": "singlechoice",
+      "choices": ["0", "1", "2", "3", "4"]
+    },
+    {
+      "q": "Difficulty staying asleep",
+      "type": "singlechoice",
+      "choices": ["0", "1", "2", "3", "4"]
+    },
+    {
+      "q": "Problem waking up to early",
+      "type": "singlechoice",
+      "choices": ["0", "1", "2", "3", "4"]
+    },
+    {
+      "q": "How satisfied/dissatisfied are you with your sleep pattern",
+      "type": "singlechoice",
+      "choices": ["0 - very satisfied", "1", "2", "3", "4 - very dissatisfied"]
+    },
+    {
+      "q": "To what extent do you consider your sleep problem to INTERFERE with your daily functioning (e.g. day time fatigue, ability to funciton at work/daily chores, concentration, memory, mood, etc.)",
+      "type": "singlechoice",
+      "choices": [
+        "0 - Not interfering",
+        "1",
+        "2",
+        "3",
+        "4 - Very much interfering"
+      ]
+    },
+    {
+      "q": "How NOTICEABLE to other do you think your sleeping problem is in terms of imparing the quality of your life?",
+      "type": "singlechoice",
+      "choices": [
+        "0 - Not Noticeable",
+        "1",
+        "2",
+        "3",
+        "4 - Very much Noticeable"
+      ]
+    },
+    {
+      "q": "How WORRIED/distressed are you about your current sleep problem?",
+      "type": "singlechoice",
+      "choices": ["0 - Not at all", "1", "2", "3", "4 - Very much Noticeable"]
+    },
+    {
+      "q": "ISI Score\nAdd scores for all 7 items \n0-7 = No clinically significatn insomnia\n8-14 = Subthreshold insomnia\n15-21 = Clinical insomnia (moderate severity)\n22-28 = Clinical insomnia (severe)",
+      "type": "freetext"
+    },
+    {
+      "q": "Past medical history confirmed?",
+      "type": "singlechoice",
+      "choices": ["Yes", "No"]
+    },
+    {
+      "q": "Additional medical history not previously mentioned?",
+      "type": "freetext"
+    }
+  ]
+}

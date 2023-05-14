@@ -1,0 +1,119 @@
+div.top-container
+	div(data-bind="visible: getBoolean('protocol.isFormCompleted')")
+		div(data-bind="visible: getBoolean('protocol.showScheduleLink')")
+			h3 Schedule Next Appointment
+			p Don't forget to schedule your next appointment!
+			div(data-role="protocolform" data-component-id="scheduleForm" data-start-button="true")
+				div
+					a(data-role="button" href="https://app.circadios.com/superdoc-redirect?param=cHJpdmF0ZUtleT0zMTI5NGRhNGYxZDY0ZWY3YmU4NGNmMDQ5YjZkYTRhZjAyZGRiZGYyMzU4ODNhNmQ4MTdlYzBmNzFkNzdmZWQ2Jm1haWw9cGhpbGlwcGErMzIxQGhlYWxlZS5jb20mcGFnZT1zZWFyY2glMkZkb2N0b3JzJmNvdW50cnk9dXM=") Schedule
+			br
+			hr
+			br
+		h1.circadiosHeader This Week's Content
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('weekone.png') #",style="width: 160px;")
+			h2 Week 1
+			h2 What is Obstructive Sleep Apnea?
+			p Obstructive Sleep Apnea is a medical condition which occurs during sleep produced by obstruction of airflow through your nose and throat. The obstruction results in a reduction or complete obstruction of airflow and results in decreased oxygen (known as hypoxia) being delivered to your body. As a response to the hypoxia and in order to re-open the airway, the brain signals your body to increase muscle tone in your airway. This pattern of hypoxia and the body’s response to open the airway interrupts your normal sleep pattern. The combination of a lack of normal oxygen and interrupted sleep pattern may lead to several medical problems.
+			p Obstructive sleep apnea is classified based on the number of episodes of alterations in your breathing. A decrease in airflow is known as hypopnea and a complete obstruction is an apnea. The number of apnea and hypopnea events per hour determines the severity of your sleep apnea.
+			p Mild Obstructive Sleep Apnea is defined as 5 to 15 episodes of apnea/hypopnea in 1 hour. There are several signs which are monitored during your sleep study. These include heart rate, oxygen level and overall sleep pattern.
+			p Your sleep study indicates you have mild obstructive sleep apnea. Symptoms of mild obstructive sleep apnea include:
+			ul
+				li 
+					a(href="https://www.circadios.com/snoring") Snoring
+				li Awakening during the night
+				li Daytime fatigue
+				li Lack of energy
+				li Morning headache
+				li Decreased sex drive
+				li Lack of mental focus or brain fog
+				li High blood pressure
+				li Abnormal heart rate
+			p Obstructive Sleep Apnea may contribute to heart problems.
+			p We recommend discussing a cardiology evaluation with your primary care physician.
+			p There are several treatment options for your mild obstructive sleep apnea.
+			p A combination of lifestyle and sleep hygiene measures may be sufficient to treat your sleep apnea. In addition to lifestyle and sleep hygiene, addressing causes of airway obstruction such as nasal obstruction may be helpful. In other cases, we may recommend an oral appliance or positive airway pressure (pap) device known as an automatic pap (apap).
+			h3 Understanding Positive Airway Pressure (PAP)
+			p Positive airway pressure machines are small air compressors which utilize a motor and fan to generate a continuous flow of air. This stream of air travels through a filter and tubing which is connected to a mask worn on your face. The amount of air pressure delivered by a pap machine is between 4-25 centimeters of water. This creates a column of air which stents your airway open preventing obstruction and apnea.
+			p There are different styles of machines used to help deliver the positive airway pressure.
+			p The two most common types of pap machines are known as a continuous airway pressure machine (CPAP) and automatic positive airway pressure machine (APAP). A CPAP machine is set to deliver a specific pressure of air and is not adjustable.  APAP machines are able to adjust the amount of pressure being delivered based on the degree of obstruction. The ability to vary the pressure to the lowest levels required to treat the apnea events commonly makes APAP machines more comfortable.
+			p We will be using a combination of an APAP machine and sleep hygiene to treat your moderate obstructive sleep apnea.
+			p Let’s start by understanding the different components of an apap system.
+			h3 Important APAP Features
+			h4 Ramping
+			p This is a component of an APAP which allows the machine to gradually increase the air pressure until it achieves the prescribed settings. This feature allows some people to fall asleep more easily as the pressure increases.
+			h4 Humidification and Heat
+			p Humidification is added to APAP to help prevent dryness of your nose and throat created by the air pressure from the machine. Additionally, many APAP systems will also heat the column of air which also decreases upper airway dryness and discomfort.
+			h3 APAP Masks
+			p As discussed, APAP functions by delivering a stream of air from a machine to your airway. The delivery of air is accomplished through the use of a mask. There are different styles of APAP masks available to make use of your apap more comfortable.
+			h4 Nasal Mask
+			p A nasal mask covers your entire nose and may be helpful if you have move around in bed and/or have facial hair.
+			h4 Nasal Pillows
+			p This is a mask which only covers the entrance of your nose and nostrils.
+			h4 Full Face Mask
+			p This mask covers your nose and mouth. This style is helpful who have nasal obstruction or breathe through their mouth.
+			h3 OSA Precations
+			p You should not drive or pilot any vehicle, heavy machinery or other mode of transportation until your sleep apnea is adequately treated.
+			p You must discuss your sleep apnea diagnosis with any surgeon and anesthesiologist prior to undergoing any procedure or intervention.
+			p You should avoid the use of any narcotics or sedatives.
+			br
+			hr
+			br
+			h1 Comfort w/ APAP
+			p Your diagnosis is moderate obstructive sleep apnea which we are going to treat with a combination of automatic positive airway pressure (apap) and sleep lifestyle modifications.  The objective is to resolve your apnea to improve your sleep, daytime energy and help prevent health problems with your metabolism, heart and brain.
+			p
+				strong Goal:
+				| Develop comfort wearing your apap mask and avoid sleeping on your back.
+			p The daily task this week is to wear your apap mask (not connected to the machine) for 15 minutes a day together with the following relaxation exercises:
+			ol
+				li Visualize a relaxing scene to help increase a sense of relaxation and progressively relax your body
+				li Begin by closing your eyes and taking 5 deep breaths
+				li Next, tense your feet and curl your toes with a 5 second pause and release the tension
+				li Move to your thigh and tense with a 5 second pause and release the tension
+				li Tense your stomach and chest with a 5 second pause and release the tension
+				li Tense your back with a 5 second pause and release the tension
+				li Tense your hands and shoulders with a 5 second pause and release the tension
+			p **If you are comfortable with your apap mask and do not need to perform these exercises, please proceed to wearing the apap mask attached to the machine and turn it on for 10 minute interval for a total of 3 sets.
+			p Now, let’s look at how we can improve your sleep apnea by adjusting your sleep position.
+			p The optimal position for treating your mild obstructive sleep apnea is a side sleeping position. You may also choose a face down sleep position but need to ensure the pillow or sheets do not obstruct your mouth or nose.
+			p
+				strong Avoid sleeping on your back!
+			p Why?
+			p Remember, obstructive sleep apnea is caused by an obstruction of airflow through your nose and throat traveling to your lungs. Sleeping on your back promotes structures in your mouth and throat to drop into the airway and contribute to the blockage of air.
+			h3 Treatment Options
+			p The simplest way to avoid sleeping on your back may be with a more comfortable pillow designed to promote sleeping on your side. Additionally, placing an extra pillow alongside your back may be all that is necessary to help you maintain a side sleeping position.
+			p If you need a pillow, we recommend the 
+				a(href="https://amzn.to/3gHQcvP") Eli &amp; Elm Ultimate Side Sleep Pillow
+				| or the 
+				a(href="https://amzn.to/3SNV3ZL") Beckham Hotel Collection Pillows
+
+		div.circadios-content-container.week-one(data-bind="visible: getBoolean('protocol.isWeekOne')")
+			h1.circadiosHeader Sleep Journal
+			p Please complete your sleep journal every day. We'll send you a reminder before you go to bed to complete the journal
+			div(data-role="protocolform" data-component-id="sleepJournalOne" data-start-button="true")
+				div(data-bind="invisible: getBoolean('sleepJournalOne.isFormCompleted')")
+					| Please complete today's sleep journal:&nbsp;&nbsp;
+					a(data-role="button" data-action="start") Complete Sleep Journal
+				div(data-bind="visible: getBoolean('sleepJournalOne.isFormCompleted')") Today's Sleep Journal is Complete! ✅
+			br
+			hr
+			br
+			div(style="text-align: center")
+				img(src="#: getResUrl('weektwo.png') #",style="width: 160px;")
+			h2 Week 2
+			h2 Sleep Position w/ APAP
+			p The focus this week is to continue increasing your comfort level with the apap mask and improving your sleep position.
+			p
+				strong Goal:
+				| Apply apap mask with the machine on for 30 minutes and continue to avoid sleeping on 	your back.

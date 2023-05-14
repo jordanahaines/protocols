@@ -1,8 +1,8 @@
 {
   "forms": [
     {
-      "id": "mildosa1",
-      "formName": "Mild OSA - 1",
+      "id": "modosa1",
+      "formName": "Moderate/Severe OSA - 1",
       "patientDetails": {
         "skip": true
       },
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "q": "Did you sleep on your side?",
+          "q": "Does it feel like you're getting use to your APAP machine?",
           "type": "singlechoice",
           "choices": ["Yes", "No"]
         }
